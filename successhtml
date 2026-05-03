@@ -1,32 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Request Received - Rudolf's Reset</title>
-  <style>
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #eaf1ea; color: #1e3b20; text-align: center; }
-    .header { padding: 40px 20px 0; background-color: #ffffff; }
-    .logo { display: block; margin: 0 auto; max-width: 200px; height: auto; border-radius: 50%; box-shadow: 0 6px 15px rgba(74, 124, 89, 0.2); }
-    .hero { padding: 20px 20px 30px; background-color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 5px solid #4a7c59; }
-    .container { max-width: 600px; margin: 40px auto; background: #ffffff; padding: 50px 30px; border-radius: 12px; box-shadow: 0 8px 20px rgba(74, 124, 89, 0.15); border: 1px solid #d4e2d4; }
-    h1 { color: #2e5a31; margin-bottom: 10px; font-size: 2.2em; }
-    p { font-size: 1.1em; line-height: 1.6; color: #4a7c59; margin-bottom: 30px; }
-    a { display: inline-block; background-color: #4a7c59; color: white; padding: 15px 20px; border-radius: 6px; text-decoration: none; font-size: 18px; font-weight: bold; transition: background-color 0.3s; }
-    a:hover { background-color: #3d6343; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Rudolf's Reset</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; color: #333; }
+        h1 { color: #1e4d2b; }
+        a { color: #558b6e; text-decoration: none; font-weight: bold; }
+    </style>
 </head>
 <body>
-  <div class="header">
-    <img src="https://i.ibb.co/BKnQYnVy/1777764838953.png" alt="Rudolf's Reset Logo" class="logo">
-  </div>
-
-  <div class="hero"></div>
-
-  <div class="container">
-    <h1>Thank You!</h1>
-    <p>Your request and photos have been sent successfully. We will review the details and get back to you with a quote shortly.</p>
-    <a href="/">Return to Homepage</a>
-  </div>
+    <h1>Request Sent!</h1>
+    <p>Thank you for reaching out to Rudolf's Reset. We have received your details and photos, and we will get back to you with a quote shortly.</p>
+    <br>
+    <a href="/">← Return to Homepage</a>
 </body>
 </html>
