@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rudolf's Reset - Quote Request</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; padding: 20px; }
-        label { display: block; margin-top: 10px; font-weight: bold; }
-        input, textarea { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
-        button { margin-top: 20px; padding: 10px 20px; background-color: #0056b3; color: white; border: none; cursor: pointer; font-size: 16px; }
-        button:hover { background-color: #004494; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rudolf's Reset - Premium Cleaning & Home Improvement</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #eaf1ea; color: #1e3b20; }
+    .header { text-align: center; padding: 40px 20px 0; background-color: #ffffff; }
+    .logo { display: block; margin: 0 auto; max-width: 200px; height: auto; border-radius: 50%; box-shadow: 0 6px 15px rgba(74, 124, 89, 0.2); }
+    .hero { text-align: center; padding: 20px 20px 30px; background-color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-bottom: 5px solid #4a7c59; }
+    .hero h1 { color: #2e5a31; margin-bottom: 10px; font-size: 2.2em; }
+    .hero p { max-width: 650px; margin: 0 auto; font-size: 1.1em; line-height: 1.6; color: #4a7c59; }
+    .container { max-width: 600px; margin: 40px auto; background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 8px 20px rgba(74, 124, 89, 0.15); border: 1px solid #d4e2d4; }
+    h2 { color: #2e5a31; margin-top: 0; text-align: center; }
+    .form-group { margin-bottom: 18px; }
+    label { display: block; margin-bottom: 8px; font-weight: bold; color: #3d6343; }
+    input[type="text"], input[type="email"], textarea, input[type="file"] { width: 100%; padding: 12px; border: 2px solid #c8d8c8; border-radius: 6px; box-sizing: border-box; font-family: inherit; background-color: #f9fbf9; transition: border-color 0.3s; }
+    input:focus, textarea:focus { border-color: #4a7c59; outline: none; }
+    button { background-color: #4a7c59; color: white; padding: 15px 20px; border: none; border-radius: 6px; cursor: pointer; width: 100%; font-size: 18px; font-weight: bold; transition: background-color 0.3s; }
+    button:hover { background-color: #3d6343; }
+  </style>
 </head>
 <body>
+  <div class="header">
+    <img src="https://i.ibb.co/BKnQYnVy/1777764838953.png" alt="Rudolf's Reset Logo" class="logo">
+  </div>
 
-    <h1>Request a Quote - Rudolf's Reset</h1>
-    <p>Enter your details and upload photos below for A and R Pristine Cleaning.</p>
+  <div class="hero">
+    <h1>Welcome to Rudolf's Reset</h1>
+    <p>Premium cleaning and home improvement in Brisbane. We specialize in complete residential resets. Let us transform your space with our reliable, elite service!</p>
+  </div>
 
-    <form ​<form name="quote-request" method="POST" data-netlify="true" enctype="multipart/form-data" action="/">
-        
-        <label for="name">Name:</label>
+  <div class="container">
+    <h2>Request a Quote</h2>
+    <p style="text-align: center; margin-bottom: 20px; color: #4a7c59;">Send us details and photos, and we'll reply with a quote.</p>
+    
+    <form name="contact" method="POST" data-netlify="true" action="/success.html" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
+      </div>
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
-
-        <label for="details">Job Details:</label>
-        <textarea id="details" name="details" rows="4" required></textarea>
-
-        <label for="photos">Upload Photos:</label>
+      <div class="form-group">
+        <label for="photos">Upload Pictures of the Space:</label>
         <input type="file" id="photos" name="photos" accept="image/*" multiple required>
+      </div>
 
-        <button type="submit">Submit Request</button>
-        
+      <div class="form-group">
+        <label for="message">What do you need help with?</label>
+        <textarea id="message" name="message" placeholder="Briefly describe the job..." required></textarea>
+      </div>
+
+      <button type="submit">Send Request</button>
     </form>
-
+  </div>
 </body>
 </html>
